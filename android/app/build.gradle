@@ -4,9 +4,9 @@ buildscript {
     }
     dependencies {
         classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.1, 0.99.99]'
-        implementation group: 'org.codehaus.groovy', name: 'groovy', version: '4.0.0'
     }
 }
+
 
 apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
 
