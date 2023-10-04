@@ -4,6 +4,7 @@ buildscript {
     }
     dependencies {
         classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.1, 0.99.99]'
+        implementation group: 'org.codehaus.groovy', name: 'groovy', version: '4.0.0'
     }
 }
 
@@ -132,10 +133,9 @@ def enableHermes = project.ext.react.get("enableHermes", false);
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8 
     }
 
     defaultConfig {
